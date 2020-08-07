@@ -33,5 +33,5 @@ gulp.task("ejs",function(){
 // ファイルの監視
 gulp.task('default', function(){
     gulp.watch('sass/**/*scss', gulp.task('sass'));
-    gulp.watch( "ejs/**/*.ejs", gulp.series( "ejs" ) );
+    gulp.watch( "ejs/*ejs", gulp.series( "ejs" ) );
 });
